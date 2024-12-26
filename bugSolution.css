@@ -1,0 +1,19 @@
+/* bugSolution.css */
+
+/* Define the missing class */
+.my-nonexistent-class {
+  @apply bg-red-500 text-white p-4 rounded;
+}
+
+/* Now the @apply directive works correctly */
+.my-component {
+  @apply my-nonexistent-class;
+}
+
+/* Or, if you need to adjust existing styles, you could add the properties directly */
+.my-component {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
